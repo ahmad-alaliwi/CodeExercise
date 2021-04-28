@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+.exercise-header {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  text-align: center;
+  color: #fff;
+  background-color: #00a4bd;
+}
+
+.exercise-header:first-child {
+  margin: 0;
+}
+
+/*Exercise one. Styling quote block*/
+
+.testimonial-content {
+  margin: 10% 25%;
+  padding-left: 20px;
+  border-left: 2px solid #FF6C02;
+  font-size: larger;
+}
+
+.testimonial-content:after {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  content: ' \25CF';
+  position: absolute;
+  color: #ff6c02;
+  margin-left: -25.9px;
+  margin-top: -10px;
+}
+
+.testimonial-paragraph {
+  color: #676B6F;
+  padding-right: 29%;
+}
+
+.testimonial-span {
+  color: #5E6569;
+  font-weight: bold;
+}
+
+.testimonial-content,
+.testimonial-paragraph,
+.testimonial-span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonial-btn {
+  background: #01A2E0;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-weight: bold;
+  float: right;
+  margin-top: -106px;
+  border-radius: 3px;
+}
+
+.fa-quote-left {
+  color: #fff;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: -54px;
+  font-size: 22px;
+  background-color: #ff6c02;
+  padding: 14px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1510px) {
+  .testimonial-btn {
+    float: left;
+    margin-top: 10px;
+  }
+
+  .testimonial-content:after {
+    margin-left: -201.9px;
+  }
+
+  .testimonial-paragraph {
+    padding-right: 6%;
+  }
+}
+
+@media screen and (min-width: 1510px) {
+  .testimonial-paragraph {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonial-content {
+    margin: 17% 13%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonial-content {
+    margin: 25% 13%;
+  }
+}
+
+/*Exercise two. Filterable content*/
+
+#root {
+  margin: 2% 10%;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+form,
+button {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1012px) {
+
+  form,
+  button {
+    float: right;
+    display: block;
+    margin-right: -14px;
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: -25px !important;
+  }
+
+  .titleList {
+    margin-top: 20px;
+
+  }
+
+  .type-line {
+    margin-top: 30px;
+  }
+}
+
+button {
+  color: #41a9d4;
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 45px 12px 20px 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.genre-drop,
+.year-drop {
+  display: inline-block;
+  min-width: 230px;
+  margin: 10px 25px 10px 0px;
+}
+
+.fa-search {
+  position: relative;
+  right: 25px;
+  margin-top: 10px;
+  color: #8E898D;
+}
+
+input[type=text] {
+  border: 1px solid #E6E6E6;
+  padding: 11px 22px;
+}
+
+.search-field:focus {
+  outline: none;
+  border: 2px solid #00a4bd !important;
+}
+
+.css-yk16xz-control {
+  border: 1px solid #E6E6E6 !important;
+  border-bottom: 3px solid #DEDEDE !important;
+  border-radius: 0px !important;
+}
+
+.radio-movie,
+.radio-book {
+  display: inline-block;
+}
+
+.titleList {
+  border-top: 1px solid #e6e6e6;
+}
+
+.search-field {
+  min-width: 184px;
+}
+
+.type-line {
+  margin-top: 20px;
+}
+
+.css-g1d714-ValueContainer {
+  padding-right: 30px !important;
+}
+
+.titleList {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+
+  padding: 10px;
+  flex: 30.33%;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.container>h4,
+p {
+  font-size: 20px !important;
+}
